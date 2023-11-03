@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(104, 16, 186);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container{
+    width: 80%;
+    max-width: 450px;
+}
+
+
+h1{
+    color: white;
+    opacity: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.display-container{
+    background-color: rgb(30, 4, 53);
+    position: relative;
+    border-radius: 1rem;
+    border-bottom: 0.35 solid rgb(104, 16, 186);
+}
+
+.display{
+    width: 70%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 1rem 1rem;
+    color: rgb(169, 161, 10);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+}
+.display::placeholder{
+    position: absolute;
+    top:50%;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: rgb(169, 161, 10);
+    opacity: 0.65;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+}
+
+.display-container button{
+    position: absolute;
+    top:50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+.input-container{
+    background-color: rgb(30, 4, 53);
+    position: relative;
+    border-radius: 1rem;
+    border-bottom: 0.35 solid rgb(104, 16, 186);
+    margin-top: 0.75rem;
+    
+}
+
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    padding: 0 1.25rem 0 0.75rem;
+}
+
+.length-container p:nth-child(1) {
+    color: white;
+    font-size: 1.5rem;
+
+}
+.length-container p:nth-child(2) {
+    color: rgb(169, 161, 10);
+    font-size: 1.5rem;
+    
+}
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    padding: 0 1rem 0 0.75rem;
+
+}
+.strength-container p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.indicator{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.generate-password{
+    width: 80%;
+    padding: 0.75rem 0;
+    background-color: rgb(104, 16, 186);
+    text-align: center;
+    border-radius: 0.75rem;
+    border-bottom: 0.35rem solid rgb(169, 161, 10);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(169, 161, 10);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-left: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+.checkboxes{
+    display: flex;
+    align-items: center;
+    margin-top:.75rem;
+    margin-left: 1.5rem;
+    gap: 0 1rem;
+
+}
+
+.checkboxes input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid teal;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.35rem;
+}
+
+.checkboxes input:checked{
+    background-color: teal;
+
+}
+
+.checkboxes input:checked::before{
+    content: '✔';
+    position:absolute;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    top: -3.5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.checkboxes label{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: .75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.slider{
+    appearance: none;
+    width: 90%;
+    cursor: pointer;
+    background-color: rgb(104, 16, 186);
+    border-radius: 1rem;
+    margin-left: 1.5rem;
+    background-repeat: none;
+    border: none;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px  yellow;
+}
+
+.tooltip{
+    background-color:transparent;
+    border: none;
+    color: teal;
+}
+.tooltip i{
+    height: 15px;
+    width: 15px;
+}
